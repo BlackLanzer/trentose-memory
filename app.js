@@ -13,6 +13,7 @@ var game = {
 	clickedCardId: 0,
 
 	startGame : function() {
+		game.expectedNumber = 1;
 		var cardsUl = $(".cards").html("");
 		for (var i = 0; i < data.length; i++) {
 			cardsUl.append(templateHiddenLi.replace("liid", "li"+i).replace("number", data[i]));
